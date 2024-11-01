@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
@@ -11,13 +12,13 @@
   </head>
 
   <body>
-    <header class="header">
-      <h1 class="about-me-heading">About me</h1> 
+    <header class="header-container">
     </header>
 
-    <section class="aboutme">
-      <article class="about-me-first">Hello, I’m Carl and I’m a frontend developer.</article>
-      <article class="about-me-second">I am based out of Malmö and I love creating things with TypeScript, JavaScript and CSS.</article> 
+    <section class="about-me-container">
+      <h1 class="about-me-heading">About me</h1> 
+      <article class="about-me-first">Hello,<br> I’m <span class="carl">Carl</span> and I’m a <br><span class="frontend-developer">frontend developer</span>.</article>
+      <article class="about-me-second">I am based out of Malmö and I love creating things with <span class="typescript">TypeScript</span>, <span class="javascript">JavaScript</span> and <span class="css">CSS</span>.</article> 
       <button class="get-in-touch-button">Get in touch!</button>
     </section>
 

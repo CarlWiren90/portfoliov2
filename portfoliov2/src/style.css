@@ -1,3 +1,11 @@
+:root {
+  --yellow: #ffec3f;
+  --white: #ffff;
+  --black: #000000;
+  --used-padding: 1.5em;
+
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +15,6 @@
 body {
   font-family: 'Afacad flux';
   overflow-x: hidden;
-  padding: 2em;
   width: 100%;
   height: 100vh;
   display: grid;
@@ -24,13 +31,81 @@ body {
   grid-template-rows: auto;
 }
 
-.header {
+.header-container {
   display: flex;
   flex-wrap: wrap;
   grid-area: header;
-  height: 7em;
+  height: 2em;
+  background-color: var(--yellow);
 }
 
-.aboutme {
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 0 var(--used-padding) 0 var(--used-padding);
   height: 50em;
+  background-color: var(--yellow);
+}
+
+.about-me-heading {
+  font-size: 3rem;
+  font-weight: 500;
+  padding-top: 1em;
+}
+
+.about-me-first {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 2.7rem;
+}
+
+.carl {
+  font-weight: 400;
+}
+
+.frontend-developer {
+  font-weight: 600;
+}
+
+.about-me-second {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+}
+
+.typescript, .javascript, .css {
+  font-weight: 600;
+}
+
+.experience {
+  height: 50em;
+  padding: 0 var(--used-padding) 0 var(--used-padding);
+  background-color: var(--black);
+}
+
+.get-in-touch-button {
+  position: relative;
+    max-height: 50px;
+    max-width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    animation-name: scale-up;
+    animation-duration: .5s;
+    transition: all .5 ease-in-out;
+    box-shadow: -4px 4px #6a3dff;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.get-in-touch-button:hover {
+  background-color: var(--black);
+  color: var(--yellow);
 }

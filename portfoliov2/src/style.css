@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Afacad flux';
+  overflow-x: hidden;
+  padding: 2em;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "aboutme"
+  "experience"
+  "portfolio"
+  "skills"
+  "footer"
+  ;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: header;
+  height: 7em;
+}
+
+.aboutme {
+  height: 50em;
+}
